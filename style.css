@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*{
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+li>a{
+  color: black;
+  flex-wrap: wrap;
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 14pt;
+  letter-spacing: 0.25em;
+}
+
+h1,h3{
+  color: white;
+  font-family: 'Encode Sans Condensed';
+  font-size: 50pt;
+  font-weight: 800;
+}
+
+
+h3{
+  color: black;
+  font-size: 30pt;
+  padding-bottom: 15px;
+  text-align: center;
+  text-shadow: white -4px 0px;
+}
+
+nav{
+  background-color: white;
+  height: 60px;
+  max-width: 100vw;
+  padding-top: 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+}
+
+nav > ul{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: auto;
+  max-width: 900px;
+  padding: 0 20px 0 20px;
+}
+
+#my-photo{
+  height: 100vh;
+
+
+}
+
+#about > div > p{
+  color: white;
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 30pt;
+}
+
+#about{
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  overflow:hidden;
+  padding: 20px;
+}
+
+#contacts-container{
+  border-left: solid white;
+  margin: 20px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  margin: 30px 0 30px 0;
+}
+
+.contact-icon{
+  font-size: 35pt;
+  margin-right: 5pt;
+  color: white;
+}
+
+.contact-link{
+  color: white;
+  padding-bottom: 2px;
+  border-bottom: white solid 1px;
+  font-size: 20pt;
+  margin-left: 10px;
+
+}
+
+#contact{
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0 100px 0;
+}
+
+#contacts-text{
+  justify-content: flex-end;
+  text-align: end;
+  min-width: 400px;
+}
+
+#contact > div{
+  margin: auto;
+  width: 800px;
+  padding: 20px;
+}
+
+#contact > div >p{
+  color: white;
+  text-shadow: none;
+  font-size: 30pt;
+}
+
+#text{
+  float: left;
+  margin: auto;
+  padding-right: 20px;
+  max-width: 800px;
+}
+
+#photo{
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#projects{
+  /* background-color: rgb(80, 80, 80); */
+  padding: 20px;
+  padding-top: 100px;
+  background-image: url(images/projects-bg.svg);
+  background-size: 130%;
+}
+
+#about > div{
+  margin: auto;
+
+}
+
+.section-title{
+  margin: auto;
+  width: 100%;
+}
+
+#card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 900px;
+
+}
+
+.card{
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid; */
+  height: auto;
+  margin: 10px;
+  margin-bottom: 30px;
+  min-width: 400px;
+  padding: 15px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
+}
+
+.card >div > p{
+  height: 150px;
+}
+
+.card >header{
+  background-color: black;
+  color: white;
+  margin: -15px;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.card > header > div{
+  border-left: 10px solid;
+  font-family: 'Encode Sans Condensed';
+  font-size: 18pt;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.button{
+  background-color: black;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.button {
+  color: white;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.screenshot{
+  border: solid 1px;
+  margin: 10px;
+  width: 350px;
+}
+
+@media screen and (max-width:400px) {
+  #contacts-text{
+    justify-content: flex-end;
+    text-align: end;
+    min-width: 360px;
+  }
+
+  .screenshot{
+    border: solid 1px;
+    margin: 10px;
+    width: 280px;
+  }
+
+  #contact{
+    height: 100% auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 50px 0;
+  }
+
+  .card >div > p{
+    height: 180px;
+    margin: 10px;
+  }
+
+  li>a{
+    color: black;
+    flex-wrap: wrap;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 12pt;
+    letter-spacing: 0.25em;
+  }
+
+  .card{
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid; */
+    height: auto;
+    margin: 10px;
+    margin-bottom: 30px;
+    min-width: 330px;
+    padding: 15px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
+  }
+}
