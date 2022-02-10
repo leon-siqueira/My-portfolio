@@ -156,11 +156,10 @@ nav > ul{
 }
 
 #projects{
-  /* background-color: rgb(80, 80, 80); */
   padding: 20px;
   padding-top: 100px;
-  background-image: url(images/projects-bg.svg);
-  background-size: 130%;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
 }
 
 #about > div{
@@ -238,6 +237,13 @@ nav > ul{
   width: 350px;
 }
 
+@media screen and (orientation:portrait) {
+  #projects{
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width:400px) {
   #contacts-text{
     justify-content: flex-end;
@@ -283,4 +289,7 @@ nav > ul{
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
   }
+
+
+
 }
