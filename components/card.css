@@ -1,0 +1,91 @@
+#card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 900px;
+
+}
+
+.card{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd;
+  height: auto;
+  margin: 10px;
+  margin-bottom: 30px;
+  min-width: 400px;
+  padding: 15px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
+}
+
+.card >header{
+  background-color: black;
+  color: white;
+  margin: -15px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.description {
+  height: 5em;
+  overflow-y: scroll;
+}
+
+.card > header > div{
+  border-left: 10px solid;
+  font-family: 'Encode Sans Condensed';
+  font-size: 18pt;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.button{
+  background-color: black;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.button {
+  color: white;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.screenshot{
+  border: solid 1px;
+  margin: 10px;
+  width: 350px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .card{
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid; */
+    height: auto;
+    margin: 10px;
+    margin-bottom: 30px;
+    min-width: 330px;
+    padding: 15px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
+  }
+
+  .screenshot{
+    border: solid 1px;
+    margin: 10px;
+    width: 280px;
+  }
+
+  .card > div > p{
+    height: 180px;
+    margin: 10px;
+  }
+
+}

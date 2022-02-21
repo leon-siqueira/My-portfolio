@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('components/navbar.css');
+@import url('components/banner.css');
+@import url('components/card.css');
+
 *,
 *:after,
 *:before {
@@ -11,9 +15,13 @@
 }
 
 *{
-  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Encode Sans', Arial, Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 300;
+}
+
+.condensed{
+  font-family: 'Encode Sans Condensed', Arial condensed, Helvetica condensed, sans-serif;
 }
 
 html{
@@ -30,7 +38,6 @@ li>a{
 
 h1,h3{
   color: white;
-  font-family: 'Encode Sans Condensed';
   font-size: 50pt;
   font-weight: 800;
 }
@@ -42,50 +49,6 @@ h3{
   padding-bottom: 15px;
   text-align: center;
   text-shadow: white -4px 0px;
-}
-
-nav{
-  background-color: white;
-  height: 60px;
-  max-width: 100vw;
-  padding-top: 16px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
-}
-
-nav > ul{
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: auto;
-  max-width: 900px;
-  padding: 0 20px 0 20px;
-}
-
-#my-photo{
-  height: 100vh;
-
-
-}
-
-#about > div > p{
-  color: white;
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 30pt;
-}
-
-#about{
-  align-items: center;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: center;
-  overflow:hidden;
-  padding: 20px;
 }
 
 #contacts-container{
@@ -136,35 +99,15 @@ nav > ul{
 
 #contact > div >p{
   color: white;
-  text-shadow: none;
   font-size: 30pt;
 }
 
-#text{
-  float: left;
-  margin: auto;
-  padding-right: 20px;
-  max-width: 800px;
-}
-
-#photo{
-  align-items: center;
-  margin: auto;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
 
 #projects{
   padding: 20px;
   padding-top: 100px;
-  background-image: url(images/bg.jpg);
-  background-size: cover;
-}
-
-#about > div{
-  margin: auto;
-
+  /* background-image: url(images/bg.jpg);
+  background-size: cover; */
 }
 
 .section-title{
@@ -172,75 +115,10 @@ nav > ul{
   width: 100%;
 }
 
-#card-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  max-width: 900px;
-
-}
-
-.card{
-  background-color: rgb(255, 255, 255);
-  /* border: 1px solid; */
-  height: auto;
-  margin: 10px;
-  margin-bottom: 30px;
-  min-width: 400px;
-  padding: 15px;
-  width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
-}
-
-.card >div > p{
-  height: 150px;
-}
-
-.card >header{
-  background-color: black;
-  color: white;
-  margin: -15px;
-  margin-bottom: 10px;
-
-  padding: 10px;
-  padding-left: 15px;
-}
-
-.card > header > div{
-  border-left: 10px solid;
-  font-family: 'Encode Sans Condensed';
-  font-size: 18pt;
-  font-weight: 600;
-  padding-left: 8px;
-}
-
-.button{
-  background-color: black;
-  height: auto;
-  margin: auto;
-  margin-top: 20px;
-  padding: 10px;
-  text-align: center;
-  width: 150px;
-}
-
-.button {
-  color: white;
-  font-size: 18pt;
-  text-align: center;
-}
-
-.screenshot{
-  border: solid 1px;
-  margin: 10px;
-  width: 350px;
-}
-
 @media screen and (orientation:portrait) {
   #projects{
-    background-image: url(images/bg2.jpg);
-    background-size: cover;
+    /* background-image: url(images/bg2.jpg);
+    background-size: cover; */
   }
 }
 
@@ -251,12 +129,6 @@ nav > ul{
     min-width: 360px;
   }
 
-  .screenshot{
-    border: solid 1px;
-    margin: 10px;
-    width: 280px;
-  }
-
   #contact{
     height: 100% auto;
     background-color: rgb(0, 0, 0);
@@ -265,10 +137,7 @@ nav > ul{
     padding: 50px 0 50px 0;
   }
 
-  .card >div > p{
-    height: 180px;
-    margin: 10px;
-  }
+
 
   li>a{
     color: black;
@@ -277,19 +146,6 @@ nav > ul{
     font-size: 12pt;
     letter-spacing: 0.25em;
   }
-
-  .card{
-    background-color: rgb(255, 255, 255);
-    /* border: 1px solid; */
-    height: auto;
-    margin: 10px;
-    margin-bottom: 30px;
-    min-width: 330px;
-    padding: 15px;
-    width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.452) 5px 5px;
-  }
-
 
 
 }
