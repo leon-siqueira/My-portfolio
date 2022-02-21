@@ -115,12 +115,12 @@ h3{
   width: 100%;
 }
 
-@media screen and (orientation:portrait) {
+/* @media screen and (orientation:portrait) {
   #projects{
     background-image: url(images/bg2.jpg);
     background-size: cover;
   }
-}
+} */
 
 @media screen and (max-width:400px) {
   #contacts-text{
