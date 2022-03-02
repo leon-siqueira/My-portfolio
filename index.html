@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/4cf9bf5d09.js" crossorigin="anonymous"></script>
   <title>Leon Siqueira</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li>
-        <a href="#about">ABOUT</a>
-      </li>
-      <li>
-        <a href="#projects">PROJECTS</a>
-      </li>
-      <li>
-        <a href="#contact">CONTACT</a>
-      </li>
-    </ul>
+  <nav class="navbar fixed-top justify-content-around align-content-center">
+        <a class="nav-link text-black fs-5" href="#about">ABOUT</a>
+        <a class="nav-link text-black fs-5" href="#projects">PROJECTS</a>
+        <a class="nav-link text-black fs-5" href="#contact">CONTACT</a>
   </nav>
   <section id="about">
     <div id="text">
@@ -35,135 +28,114 @@
       <img id="my-photo" src="images/port-photo.png" alt="">
     </div>
     <div id="call-to-action">
-      <a href="#projects" class="moving-link condensed">↓ Don't be shy, take a look at my projects ↓</a>
+      <a href="#projects" class="moving-link condensed"><p>Don't be shy, take a look at my projects</p><p>↓ ↓ ↓ ↓ ↓</p></a>
     </div>
   </section>
   <section id="projects">
     <div class="section-title">
       <h3 class="condensed">THOSE ARE MY PROJECTS</h3>
     </div>
-    <div id="card-container">
-      <div class="card">
-        <header>
+    <div class="container" id="card-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5 card">
+          <header>
+            <div>
+              JS DOCUMENTATION
+            </div>
+          </header>
           <div>
-            JS DOCUMENTATION
+            <img class="screenshot" src="images/screenshot1.png" alt="">
           </div>
-        </header>
-        <div>
-          <img class="screenshot" src="images/screenshot1.png" alt="">
-        </div>
-        <div>
-          <p class="description">A hypothetic documentation page. The focus of here is readability
-            and diagramation on a responsive site.
-          </p>
-        </div>
-        <a target="_blank" href="https://codepen.io/leon-siqueira/full/wvrwxPb">
-          <div class="button">
-            ACCESS
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <header>
           <div>
-            FEEDBACK FORM
+            <p class="description">A hypothetic documentation page. The focus of here is readability
+              and diagramation on a responsive site.
+            </p>
           </div>
-        </header>
-        <div>
-          <img class="screenshot" src="images/screenshot2.png" alt="">
-        </div>
-        <div>
-          <p class="description">A customized form with a responsive interface and modern design.
-            Showing the potential of using even a simple component of a site to show personality.
-          </p>
-        </div>
-        <a target="_blank" href="https://codepen.io/leon-siqueira/full/JjyyOzB">
-        <div class="button">
+          <a class="button" target="_blank" href="https://codepen.io/leon-siqueira/full/wvrwxPb">
             ACCESS
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <!-- <div class="card">
-        <header>
+        <div class="col-12 col-lg-5 card">
+          <header>
+            <div>
+              FEEDBACK FORM
+            </div>
+          </header>
           <div>
-            LANDING PAGE
+            <img class="screenshot" src="images/screenshot2.png" alt="">
           </div>
-        </header>
-        <div>
-          <img class="screenshot" src="images/screenshot3.png" alt="">
-        </div>
-        <div>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quod voluptatem modi dolores illum tempora rem excepturi eius ratione totam consequuntur neque quo accusamus ex inventore optio omnis minus maiores?</p>
-        </div>
-        <a target="_blank" href="https://codepen.io/leon-siqueira/full/wvqLwvE">
-          <div class="button">
-            ACCESS
+          <div>
+            <p class="description">A customized form with a responsive interface and modern design.
+            </p>
           </div>
-        </a>
-      </div> -->
+          <a class="button" target="_blank" href="https://codepen.io/leon-siqueira/full/JjyyOzB">
+              ACCESS
+          </a>
+        </div>
 
-      <div class="card">
-        <header>
+        <div class="col-12 col-lg-5 card">
+          <header>
+            <div>
+              TRIBUTE PAGE
+            </div>
+          </header>
           <div>
-            TRIBUTE PAGE
+            <img class="screenshot" src="images/screenshot4.png" alt="">
           </div>
-        </header>
-        <div>
-          <img class="screenshot" src="images/screenshot4.png" alt="">
-        </div>
-        <div>
-          <p class="description">A tribute in memoriam of Kentaro Miura. The creative mind and masterful artist behind the acclaimed dark fantasy series Berserk.</p>
-        </div>
-        <a target="_blank" href="https://codepen.io/leon-siqueira/full/LYjxYmG">
-          <div class="button">
+          <div>
+            <p class="description">A tribute in memoriam of Kentaro Miura. The creative mind and masterful artist behind Berserk.</p>
+          </div>
+          <a class="button" target="_blank" href="https://codepen.io/leon-siqueira/full/LYjxYmG">
             ACCESS
-          </div>
-        </a>
-    </div>
+          </a>
+        </div>
+      </div>
 
   </section>
-  <section id="contact">
-    <div id="contacts-text">
-      <h1 class="condensed">
-        THOSE ARE MY CONTACTS
-      </h1>
-      <p>
-        let's work together?
-      </p>
-    </div>
-    <div  id="contacts-container">
-      <div class="contact">
-        <div>
-          <a href="https://codepen.io/leon-siqueira" target="_blank">
-            <i class="contact-icon fa-brands fa-codepen"></i>
-          </a>
-        </div>
-        <div>
-          <a class="contact-link" target="_blank" href="https://codepen.io/leon-siqueira">CodePen</a>
-        </div>
+  <section class="pt-5" id="contact">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-7 pe-md-3" id="contacts-text">
+        <h1 class="condensed">
+          THOSE ARE MY CONTACTS
+        </h1>
+        <p class="text-white fs-2">
+          let's work together?
+        </p>
       </div>
-      <div class="contact">
-        <div>
-          <a href="https://github.com/leon-siqueira" target="_blank">
-            <i class="contact-icon fa-brands fa-github-alt"></i>
-          </a>
+      <div class="col-md-4 ps-5" id="contacts-container">
+        <div class="contact">
+          <div>
+            <a href="https://codepen.io/leon-siqueira" target="_blank">
+              <i class="contact-icon fa-brands fa-codepen"></i>
+            </a>
+          </div>
+          <div>
+            <a class="contact-link" target="_blank" href="https://codepen.io/leon-siqueira">CodePen</a>
+          </div>
         </div>
-        <div>
-          <a class="contact-link" id="profile-link" target="_blank" href="https://github.com/leon-siqueira">Github</a>
+        <div class="contact">
+          <div>
+            <a href="https://github.com/leon-siqueira" target="_blank">
+              <i class="contact-icon fa-brands fa-github-alt"></i>
+            </a>
+          </div>
+          <div>
+            <a class="contact-link" id="profile-link" target="_blank" href="https://github.com/leon-siqueira">Github</a>
+          </div>
         </div>
-      </div>
-      <div class="contact">
-        <div>
-          <a href="https://www.linkedin.com/in/leon-siqueira" target="_blank">
-            <i class="contact-icon fa-brands fa-linkedin-in"></i>
-          </a>
+        <div class="contact">
+          <div>
+            <a href="https://www.linkedin.com/in/leon-siqueira" target="_blank">
+              <i class="contact-icon fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div>
+            <a class="contact-link" href="https://www.linkedin.com/in/leon-siqueira">LinkedIn</a>
+          </div>
         </div>
-        <div>
-          <a class="contact-link" href="https://www.linkedin.com/in/leon-siqueira">LinkedIn</a>
-        </div>
-      </div>
 
+      </div>
     </div>
   </section>
 </body>

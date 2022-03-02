@@ -55,6 +55,11 @@
   color: white;
   font-size: 18pt;
   text-align: center;
+  text-decoration: none;
+}
+
+.button:hover{
+  color: white;
 }
 
 .screenshot{

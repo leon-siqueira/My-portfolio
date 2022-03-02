@@ -9,7 +9,7 @@ nav{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
 }
 
-nav > ul{
+/* nav > ul{
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -17,4 +17,4 @@ nav > ul{
   margin: auto;
   max-width: 900px;
   padding: 0 20px 0 20px;
-}
+} */

@@ -1,0 +1,58 @@
+#contacts-container{
+  border-left: solid white;
+  margin: 20px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.contact-icon{
+  font-size: 35pt;
+  margin-right: 5pt;
+  color: white;
+}
+
+.contact-link{
+  color: white;
+  padding-bottom: 2px;
+  /* border-bottom: white solid 1px; */
+  font-size: 20pt;
+  margin-left: 10px;
+
+}
+
+#contact{
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0 100px 0;
+  padding: 0 15px;
+}
+
+#contacts-text{
+  justify-content: flex-end;
+  text-align: end;
+  min-width: 380px;
+  padding: 0px;
+}
+
+#contact > div{
+  margin: auto;
+  width: 800px;
+  padding: 20px;
+}
+
+#contact > div >p{
+  color: white;
+  font-size: 30pt;
+}
+
+@media screen and (orientation:portrait) {
+  #contact{
+    height: 100%;
+  }
+}
