@@ -38,7 +38,7 @@ li>a{
   letter-spacing: 0.25em;
 }
 
-h1,h3{
+h1, h2, h3{
   color: white;
   font-size: 50pt;
   font-weight: 800;
@@ -65,13 +65,16 @@ h3{
   width: 100%;
 }
 
+a:hover{
+  color: #777;
+}
+
 
 
 @media screen and (max-width:400px) {
   #contacts-text{
     justify-content: flex-end;
     text-align: end;
-    min-width: 360px;
   }
 
   #contact{
