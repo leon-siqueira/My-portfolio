@@ -47,7 +47,7 @@
   position: absolute;
   bottom: 30px;
   animation-name: bounce;
-  animation-duration: 750ms;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 

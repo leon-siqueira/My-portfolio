@@ -9,15 +9,6 @@ nav{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
 }
 
-/* nav > ul{
-align-items: center;
-display: flex;
-justify-content: space-between;
-list-style-type: none;
-margin: auto;
-max-width: 900px;
-padding: 0 20px 0 20px;
-} */
 .nav-link{
   font-size: 15pt;
   color: rgba(0, 0, 0, 0);
@@ -38,7 +29,7 @@ padding: 0 20px 0 20px;
   .close-button{
     position: absolute;
     top: 37px;
-    right: 44px;
+    right: 40px;
   }
   .navbar-desktop{
     display: none;

@@ -1,4 +1,6 @@
-function openNavigation() {
+let isClosed = true
+
+const openNavigation = () => {
   let navigation = document.getElementById("navbar-mobile");
   let links = document.getElementsByClassName("mobile-link");
   console.log(links)
@@ -10,15 +12,15 @@ function openNavigation() {
     links[index].style.animation = `appearAndSkip 0.1s 0.${delay}s normal forwards ease-in-out`
     setTimeout(delay * 100);
     delay += 2
-    console.log(links[index])
     setTimeout(() => {
       links[index].style.color = `black`
     }, delay * 80);
   }
   document.body.style.overflow = "hidden"
-}
+  isClosed = false
+};
 
-function closeNavigation() {
+const closeNavigation = () => {
   let navigation = document.getElementById("navbar-mobile");
   let links = document.getElementsByClassName("mobile-link");
   for (let index = 0; index < links.length; index++) {
@@ -27,4 +29,13 @@ function closeNavigation() {
   document.body.style.overflow = "visible";
   navigation.style.animation = "fadeOut 0.1s"
   navigation.classList.add("d-none");
+  isClosed = true
 }
+
+const closeOnResize = () => {
+  if (innerWidth >= 561 && isClosed == false) {
+    closeNavigation();
+  }
+}
+
+window.addEventListener('resize', closeOnResize);
