@@ -13,7 +13,7 @@ function openNavigation() {
     console.log(links[index])
     setTimeout(() => {
       links[index].style.color = `black`
-    }, delay * 50);
+    }, delay * 80);
   }
   document.body.style.overflow = "hidden"
 }
