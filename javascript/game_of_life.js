@@ -1,4 +1,5 @@
 const canvas = document.getElementById('gol-canvas');
+const canvasContainer = document.querySelector('#canvas-container');
 const ctx = canvas.getContext('2d');
 
 const cellSize = 8;
@@ -64,7 +65,7 @@ function getNumNeighbors(row, col, board) {
 }
 
 function getWrapperHeight() {
-  return document.querySelector('#canvas-container').clientHeight;
+  return canvasContainer.clientHeight;
 }
 
 function setNumRows() {
@@ -72,7 +73,7 @@ function setNumRows() {
 }
 
 function getWrapperWidth() {
-  return document.querySelector('#canvas-container').clientWidth;
+  return canvasContainer.clientWidth;
 }
 
 function setNumCols() {
@@ -87,10 +88,11 @@ function tick() {
   }, 83);
 }
 
-window.onresize = () => {
+const resizeObserver = new ResizeObserver(_e => {
   canvas.width = Math.floor(setNumCols()) * cellSize;
   canvas.height = Math.floor(setNumRows()) * cellSize;
   board = createBoard(numRows, numCols);
-}
+});
 
 tick();
+resizeObserver.observe(canvasContainer);

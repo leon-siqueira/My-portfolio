@@ -1,11 +1,12 @@
 #canvas-container{
-  width: 100%;
+  width: 100vw;
   height: 100lvh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #eee;
+  overflow: hidden;
 }
 
 #gol-canvas{
